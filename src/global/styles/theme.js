@@ -4,7 +4,9 @@ export const theme = {
         secondary:'#000',
         border:'rgba(0, 0, 0, .1)',
         active:'#EA1010',
-        inative:'E1E1E1',
+        active2:'#FF0342',
+        inative:'#E1E1E1',
+        inative2:'#E1E1E1',
         textColor:"#FFFF",
         textColorActive:"#EA1010"
     },

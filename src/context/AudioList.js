@@ -26,7 +26,7 @@ export class AudioList extends Component{
 
     render(){
         return(
-            <AudioContext.Provider value={{trackFiles:trackFiles}}>
+            <AudioContext.Provider value={{}}>
                 {this.props.children}
             </AudioContext.Provider>
         )
