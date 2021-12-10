@@ -3,7 +3,7 @@ import { theme } from '../../global/styles/theme';
 export const styles = StyleSheet.create({
     container:{
         height:80,
-        justifyContent:'center',
+        flexDirection:'row',
         alignItems:'center',
         backgroundColor:theme.colors.primary, 
         borderTopWidth:3,
@@ -11,9 +11,11 @@ export const styles = StyleSheet.create({
         elevation:10,
         shadowColor:theme.colors.border,
         shadowOpacity:0.8,
-        shadowOffset: {width: 0, height: -4}
+        shadowOffset: {width: 0, height: -4},
+        padding:10,
     },
     btnContainer:{
+        width:50,
         flex:1,
         flexDirection: 'row',
         justifyContent: 'center',
@@ -26,8 +28,8 @@ export const styles = StyleSheet.create({
         flex:1,
         justifyContent:'center',
         alignItems:'center',
-        maxWidth:70,
-        height:70,
+        maxWidth:50,
+        height:50,
         borderWidth:1,
         borderRadius:60,
         borderColor:theme.colors.active,
@@ -38,8 +40,8 @@ export const styles = StyleSheet.create({
         flex:1,
         justifyContent:'center',
         alignItems:'center',
-        maxWidth:70,
-        height:50,
+        maxWidth:60,
+        height:40,
         borderWidth:1,
         borderLeftColor:theme.colors.active,
         borderTopColor:theme.colors.active,
@@ -52,8 +54,8 @@ export const styles = StyleSheet.create({
         flex:1,
         justifyContent:'center',
         alignItems:'center',
-        maxWidth:70,
-        height:50,
+        maxWidth:60,
+        height:40,
         borderWidth:1,
         borderTopColor:theme.colors.active,
         borderBottomColor:theme.colors.active,
@@ -61,5 +63,19 @@ export const styles = StyleSheet.create({
         borderLeftWidth:0,
         borderTopRightRadius:  60,
         borderBottomRightRadius:  60,
-    }
+    },
+    artContainer:{
+        flex:1,
+        width:200,
+        justifyContent:'flex-start',
+        flexDirection:'row',
+        alignItems:'center',
+
+    },
+    artImage:{
+        width:50,
+        height:50,
+        borderRadius:60,
+        marginRight:5,
+    },
 })
