@@ -7,6 +7,7 @@ import { theme } from './src/global/styles/theme'
 import { Header } from './src/components/Header'
 import {Routers} from "./src/Routers"
 import AppLoading from 'expo-app-loading'
+import { BottomPlayer } from "./src/components/BottomPlayer";
 
 export default function App() {
     const [fontLoaded] = useFonts({
@@ -25,6 +26,7 @@ export default function App() {
       />
       <Header/>
       <Routers/>
+      <BottomPlayer/>
     </NavigationContainer>
   )
 }

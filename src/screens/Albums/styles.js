@@ -7,5 +7,10 @@ export const styles = StyleSheet.create({
         alignItems:'center',
         backgroundColor:theme.colors.primary,
         color:theme.colors.textColor,
+    },
+    text:{
+        color:theme.colors.textColor,
+        fontSize:12,
+        fontFamily:theme.fonts.text500,
     }
 })

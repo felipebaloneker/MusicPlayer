@@ -1,10 +1,11 @@
 import React from "react";
 import {View,Text} from 'react-native'
+import { styles } from "./styles";
 
 export function BottomPlayer(){
     return(
-        <View>
-            <Text>BottomPlayer</Text>
+        <View style={styles.container}>
+            <Text style={styles.text}>BottomPlayer</Text>
         </View>
     )
 }

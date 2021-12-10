@@ -12,8 +12,8 @@ export const screenStyle = {
     tabBarIndicatorStyle:{
         backgroundColor:theme.colors.active,
         width:20,
-        alginSelf:'flex-start',
         boxShadow:'none',
-        alginSelf:'left'
+        alginSelf:'flex-start'
+
     }
 }

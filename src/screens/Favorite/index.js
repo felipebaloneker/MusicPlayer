@@ -2,10 +2,10 @@ import React from "react";
 import {View,Text} from 'react-native'
 import { styles } from './styles'
 
-export function Player(){
+export function Favorite(){
     return(
         <View style={styles.container}>
-            <Text>Player</Text>
+            <Text>Favorite</Text>
         </View>
     )
 }

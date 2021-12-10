@@ -5,7 +5,7 @@ import { styles } from './styles'
 export function Songs(){
     return(
         <View style={styles.container}>
-            <Text>AudioLibrary</Text>
+            <Text style={styles.text}>AudioLibrary</Text>
         </View>
     )
 }
