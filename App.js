@@ -6,6 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 import { theme } from './src/global/styles/theme'
 import { Header } from './src/components/Header'
 import {Routers} from "./src/Routers"
+import {AudioList} from './src/context/AudioList'
 import AppLoading from 'expo-app-loading'
 import { BottomPlayer } from "./src/components/BottomPlayer";
 
@@ -18,15 +19,17 @@ export default function App() {
       return <AppLoading/>
     }
   return (
-    <NavigationContainer>
-      <StatusBar
-        backgroundColor={theme.colors.primary}
-        translucent={false}
-        barStyle='light-content'
-      />
-      <Header/>
-      <Routers/>
-      <BottomPlayer/>
-    </NavigationContainer>
+    <AudioList>
+      <NavigationContainer>
+        <StatusBar
+          backgroundColor={theme.colors.primary}
+          translucent={false}
+          barStyle='light-content'
+        />
+        <Header/>
+        <Routers/>
+        <BottomPlayer/>
+     </NavigationContainer>
+    </AudioList>
   )
 }

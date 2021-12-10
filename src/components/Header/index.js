@@ -6,7 +6,7 @@ export function Header(){
     return(
         <View style={styles.container}>
             <Text style={styles.text}>
-                My Music
+                Waltz
             </Text>
         </View>
     )
