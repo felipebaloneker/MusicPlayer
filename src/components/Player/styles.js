@@ -4,15 +4,16 @@ export const styles = StyleSheet.create({
     container:{
         flex:1,
         justifyContent:'space-around',
-        backgroundColor:theme.colors.primary,
+        backgroundColor:theme.colors.modal,
         padding:20,
         paddingTop:0,
+        borderWidth:1,
         borderTopRightRadius:30,
         borderTopLeftRadius:30,
         elevation:8,
         shadowColor:theme.colors.secondary,
         shadowOpacity:0.3,
-        shadowOffset: {width: 2, height: -10},
+        shadowOffset: {width: 0, height: -10},
     },
     header:{
         justifyContent:'center',

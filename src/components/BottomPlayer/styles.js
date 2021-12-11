@@ -5,14 +5,10 @@ export const styles = StyleSheet.create({
         height:80,
         flexDirection:'row',
         alignItems:'center',
-        backgroundColor:theme.colors.primary, 
-        elevation:5,
-        borderTopWidth:2,
-        borderTopColor:theme.colors.border,
-        shadowColor:theme.colors.primary,
-        shadowOpacity:0.7,
-        shadowOffset: {width: 2, height: -20},
+        backgroundColor:theme.colors.secondary, 
         padding:10,
+        borderTopLeftRadius:24,
+        borderTopRightRadius:24,
     },
     text:{
         color:theme.colors.textColor

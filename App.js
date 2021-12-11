@@ -9,6 +9,7 @@ import {Routers} from "./src/Routers"
 import {AudioList} from './src/context/AudioList'
 import AppLoading from 'expo-app-loading'
 import { BottomPlayer } from "./src/components/BottomPlayer";
+import { Background } from './src/components/Background';
 
 export default function App() {
     const [fontLoaded] = useFonts({
@@ -19,17 +20,19 @@ export default function App() {
       return <AppLoading/>
     }
   return (
-    <AudioList>
-      <NavigationContainer>
-        <StatusBar
-          backgroundColor={theme.colors.primary}
-          translucent={false}
-          barStyle='light-content'
-        />
-        <Header/>
-        <Routers/>
-        <BottomPlayer/>
-     </NavigationContainer>
-    </AudioList>
+    <Background>
+          <AudioList>
+        <NavigationContainer>
+          <StatusBar
+            backgroundColor={theme.colors.primary}
+            translucent={false}
+            barStyle='light-content'
+          />
+          <Header/>
+          <Routers/>
+          <BottomPlayer/>
+      </NavigationContainer>
+      </AudioList>
+    </Background>
   )
 }

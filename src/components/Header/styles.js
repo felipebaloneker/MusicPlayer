@@ -5,7 +5,6 @@ export const styles = StyleSheet.create({
         justifyContent:'center',
         padding:10,
         height:90,
-        backgroundColor:theme.colors.primary
     },
     text:{
         color:theme.colors.textColor,
