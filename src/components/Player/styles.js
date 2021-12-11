@@ -3,13 +3,75 @@ import { theme } from '../../global/styles/theme';
 export const styles = StyleSheet.create({
     container:{
         flex:1,
-        justifyContent:'center',
+        justifyContent:'space-around',
         backgroundColor:theme.colors.primary,
-        
+        padding:20,
+        paddingTop:0,
+        borderTopRightRadius:30,
+        borderTopLeftRadius:30,
+        elevation:8,
+        shadowColor:theme.colors.secondary,
+        shadowOpacity:0.3,
+        shadowOffset: {width: 2, height: -10},
     },
-    text:{
+    header:{
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    headerText:{
+        fontSize:16,
+        color:theme.colors.textColor,
+    },  
+    main:{
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    albumArt:{
+        width:200,
+        height:200,
+    },
+    footer:{
+        justifyContent:'center',
+        marginBottom:100,
+    },
+    textContainer:{
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    trackName:{
         color:theme.colors.textColor,
         fontSize:20,
         fontFamily:theme.fonts.text500,
+    },
+    trackArt:{
+        borderWidth:4,
+        borderLeftColor:theme.colors.inative3,
+        borderTopColor:theme.colors.active,
+        borderBottomColor:theme.colors.inative3,
+        borderRightColor:theme.colors.active,
+        padding:20,
+        borderRadius:120,
+        margin:20,
+        marginTop:0,
+    },
+    trackAlbum:{
+        color:theme.colors.textColorLight,
+        fontSize:16,
+        fontFamily:theme.fonts.text400,
+    },
+    trackStatus:{
+        
+    },
+    trackTime:{
+        width:320,
+        justifyContent:'space-between',
+        flexDirection:'row',
+        alignItems:'center',
+        marginBottom:50,
+        marginTop:-50,
+    },
+    time:{
+        color:theme.colors.textColorLight,
+        
     }
 })

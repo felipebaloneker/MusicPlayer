@@ -7,11 +7,12 @@ export function ModalView({children, ...rest}){
     return(
         <Modal
         transparent
-        animationType='slideInUp'
+        animationType='slide'
         {...rest}
         >
             <View style={styles.overlay}>
                 <View style={styles.container}>
+                <View style={styles.bar}/>
                     {children}
                 </View>
             </View>
