@@ -52,29 +52,20 @@ export const styles = StyleSheet.create({
         fontSize:16,
         fontFamily:theme.fonts.text400,
     },
-    trackStatus:{
-        width:320,
-        height:3,
-        backgroundColor:theme.colors.inative3,
-        justifyContent:'center',
-        alignItems:'flex-start',
-        borderRadius:100,
-        overflow:'hidden'
-    },
-    trackPosition:{
-        width:100,
-        height:3,
-        backgroundColor:theme.colors.active,
+    progessBar:{
+        width:350,
+        flexDirection:'row'
     },
     timeContainer:{
         margin:50,
+        flexDirection:'column',
+        alignItems:'center',
     },
     trackTime:{
         width:320,
         justifyContent:'space-between',
         flexDirection:'row',
         alignItems:'center',
-        marginBottom:50,
         marginTop:-50,
     },
     time:{

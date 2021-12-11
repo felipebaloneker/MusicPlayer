@@ -2,6 +2,7 @@ import React,{Component,createContext} from 'react'
 import * as MediaLibrary from 'expo-media-library'
 
 export const AudioContext = createContext()
+
 export class AudioList extends Component{
     constructor(props){
         super(props)
@@ -23,7 +24,6 @@ export class AudioList extends Component{
                 {mediaType:'audio',first:track.totalCount}
 
             )
-            console.log(track.assets.length)
             this.setState({...this.state, trackFiles:track.assets})
         }
     }

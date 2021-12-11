@@ -1,16 +1,20 @@
 import React,{Component} from "react";
-import {View,Text} from 'react-native'
+import {View,Text, ScrollView} from 'react-native'
 import { styles } from './styles'
-import {AudioList } from '../../context/AudioList'
+import { AudioContext } from '../../context/AudioList'
 
 export class Songs extends Component{
-    //static contextType = AudioList
+    static contextType = AudioContext
 
     render(){
         return(
-            <View style={styles.container}>
-                <Text style={styles.text}>AudioLibrary</Text>
-            </View>
+            <ScrollView style={styles.container}>
+                {this.context.trackFiles.map(track => 
+                    <View style={styles.textContainer}>
+                        <Text style={styles.text} key={track.id}>{track.filename}</Text> 
+                    </View>
+                )}
+            </ScrollView>
         )
     }
     

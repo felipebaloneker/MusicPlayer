@@ -3,6 +3,8 @@ import {View,Text,Image } from 'react-native';
 import { styles } from "./styles";
 import { ModalButtons } from '../ModalButtons';
 import Vinyl from '../../assets/images/vinyl.png'
+import Slider from '@react-native-community/slider';
+import { theme } from '../../global/styles/theme';
 
 export function Player(){
     return(
@@ -21,14 +23,19 @@ export function Player(){
 
                     <View>
                         <View style={styles.timeContainer}>
-                            <View style={styles.trackStatus}>
-                                <View style={styles.trackPosition}>
-                                </View>
-                            </View> 
-
                             <View style={styles.trackTime}>
                                 <Text style={styles.time}>1:23</Text>
                                 <Text style={styles.time}>5:00</Text>
+                            </View>
+                            <View>
+                                <Slider 
+                                style={styles.progessBar}
+                                minimumValue={0}
+                                maximumValue={100}
+                                thumbTintColor={theme.colors.active}
+                                minimumTrackTintColor={theme.colors.active}
+                                maximumTrackTintColor={theme.colors.inative3}
+                                />
                             </View>
                         </View>
 
