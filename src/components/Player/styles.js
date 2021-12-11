@@ -27,12 +27,12 @@ export const styles = StyleSheet.create({
         alignItems:'center'
     },
     albumArt:{
-        width:200,
-        height:200,
+        width:300,
+        height:300,
     },
     footer:{
         justifyContent:'center',
-        marginBottom:100,
+        marginBottom:20,
     },
     textContainer:{
         justifyContent:'center',
@@ -44,15 +44,7 @@ export const styles = StyleSheet.create({
         fontFamily:theme.fonts.text500,
     },
     trackArt:{
-        borderWidth:4,
-        borderLeftColor:theme.colors.inative3,
-        borderTopColor:theme.colors.active,
-        borderBottomColor:theme.colors.inative3,
-        borderRightColor:theme.colors.active,
-        padding:20,
         borderRadius:120,
-        margin:20,
-        marginTop:0,
     },
     trackAlbum:{
         color:theme.colors.textColorLight,
@@ -60,7 +52,21 @@ export const styles = StyleSheet.create({
         fontFamily:theme.fonts.text400,
     },
     trackStatus:{
-        
+        width:320,
+        height:3,
+        backgroundColor:theme.colors.inative3,
+        justifyContent:'center',
+        alignItems:'flex-start',
+        borderRadius:100,
+        overflow:'hidden'
+    },
+    trackPosition:{
+        width:100,
+        height:3,
+        backgroundColor:theme.colors.active,
+    },
+    timeContainer:{
+        margin:50,
     },
     trackTime:{
         width:320,
