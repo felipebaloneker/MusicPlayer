@@ -14,7 +14,9 @@ export class AudioList extends Component{
    trackList = async()=>{   
         const permission = await MediaLibrary.getPermissionsAsync();
         if(!permission.granted){
-            await MediaLibrary.requestPermissionsAsync();
+            await MediaLibrary.requestPermissionsAsync(false)
+            .catch(console.log('Error!! cannot get permission')
+            );
         }
         if(permission.granted){
             let track = await MediaLibrary.getAssetsAsync(
