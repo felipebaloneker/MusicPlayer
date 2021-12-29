@@ -15,13 +15,15 @@ export class Songs extends Component{
         this.currentItem = {}
     }
 
-    trackPlay = async (track)=>{
+    playTrack = async (track)=>{
         console.log(track)
-        const playbackObject = new Audio.Sound();
-        playbackObject.loadAsync(
+        const playback = new Audio.Sound();
+        const status = await playback.loadAsync(
             {uri: track.uri},
             {shouldPlay:true}
         )
+        this.setState({...this.state, playbackObject:playback,soundObject:status})
+        await sound.playAsync();
     }
     render(){
         return(
@@ -32,7 +34,7 @@ export class Songs extends Component{
                 >
                     <Text style={styles.text} 
                     key={track.id}
-                    onPress={()=>this.trackPlay(track)}
+                    onPress={()=>this.playTrack(track)}
                     >
                         {track.filename}
                     </Text> 
