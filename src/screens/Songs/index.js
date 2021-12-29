@@ -2,7 +2,6 @@ import React,{Component} from "react";
 import {View,Text, ScrollView} from 'react-native'
 import { styles } from './styles'
 import { AudioContext } from '../../context/AudioList'
-import { RectButton } from "react-native-gesture-handler";
 
 export class Songs extends Component{
     static contextType = AudioContext
